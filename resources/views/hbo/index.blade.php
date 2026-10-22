@@ -191,7 +191,7 @@
 
     @if (Auth::user()->id == '6')
         {{-- Ads Modal 1 --}}
-        <div id="ads-modal-1"
+        {{-- <div id="ads-modal-1"
             class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
 
             <div class="bg-white rounded-xl shadow-xl w-full max-w-2xl p-6 relative">
@@ -203,10 +203,10 @@
                 <img src="{{ asset('images/kwatogs1.jpg') }}" class="w-full rounded-lg object-cover">
 
             </div>
-        </div>
+        </div> --}}
 
         {{-- Ads Modal 2 (hidden initially) --}}
-        <div id="ads-modal-2"
+        {{-- <div id="ads-modal-2"
             class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
 
             <div class="bg-white rounded-xl shadow-xl w-full max-w-md p-6 relative">
@@ -219,7 +219,7 @@
                 <img src="{{ asset('images/kwatogs2.jpg') }}" class="w-full rounded-lg object-cover">
 
             </div>
-        </div>
+        </div> --}}
     @endif
 
     <script>

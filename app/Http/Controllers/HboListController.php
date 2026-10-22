@@ -418,7 +418,7 @@ class HboListController extends Controller
         );
 
         // Call separate method to send email notifications
-        $this->sendHboNotification($hbo);
+        // $this->sendHboNotification($hbo);
 
         return redirect()->route('hbo.list')->with('success', 'Hazard record created successfully and notifications sent.');
     }

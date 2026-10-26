@@ -99,6 +99,7 @@
                             <th class="px-4 py-3 text-left text-sm font-medium w-32">Business Unit</th>
                             <th class="px-4 py-3 text-left text-sm font-medium w-32">Group</th>
                             <th class="px-4 py-3 text-left text-sm font-medium w-36">Date Raised</th>
+                            <th class="px-4 py-3 text-left text-sm font-medium w-36">Responsible</th>
                             <th class="px-4 py-3 text-left text-sm font-medium w-28">Status</th>
                             <th class="px-4 py-3 text-center text-sm font-medium w-24">Actions</th>
                         </tr>
@@ -123,6 +124,8 @@
                                 <td class="px-4 py-3 text-xs text-gray-800">{{ $hbo->company }}</td>
                                 <td class="px-4 py-3 text-xs text-gray-800">
                                     {{ \Carbon\Carbon::parse($hbo->date_raised)->format('Y-m-d') }}</td>
+                                <td class="px-4 py-3 text-xs text-gray-800">
+                                    {{ $hbo->reported_by }}</td>
                                 @php
                                     $statusColors = [
                                         'CLOSE' => ['text' => '#166534', 'bg' => '#bbf7d0'],
